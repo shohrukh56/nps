@@ -4,23 +4,18 @@ import "fmt"
 
 func main()  {
 
-	score1 :=10
-	score2 :=10
-	score3 :=10
+	scores :[3]int{10, 7, 10}
+	promoters :=0
+	detractors :=0
+	for value; :=range scores{
+		if value >=promotersLowerbound{
+			promoters=promoters+1
+		}
+		if value <=detractorsUpperBound{
+			detractors=detractors+1
+		}
+	}
 
-	promoters := 0
-	promoter := promoters
-	detractors := promoters
-
-	if score1 >=9{
-		promoter=promoter+1
-	}
-	if score2 <=6{
-	detractors=detractors+1
-	}
-	if score3 >=9{
-	promoter=promoter+1
-	}
-nps := (promoter-detractors)/3*100
+nps := (promoters-detractors)/3*len
 fmt.Println(nps)
 }
