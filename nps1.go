@@ -13,6 +13,8 @@ func main()  {
 		}
 		if value <=detractorsUpperBound{
 			detractors=detractors+1
+			hello world
+
 		}
 	}
 
